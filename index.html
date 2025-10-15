@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Docs - GitHub Pages Site</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        h1 {
+            color: #24292e;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #6a737d;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .sample-notice {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .nav-section {
+            background-color: #f6f8fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        .nav-section h2 {
+            color: #24292e;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .nav-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .nav-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #e1e4e8;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s ease;
+        }
+        .nav-card:hover {
+            border-color: #0366d6;
+            box-shadow: 0 2px 8px rgba(3, 102, 214, 0.1);
+            transform: translateY(-2px);
+        }
+        .nav-card h3 {
+            color: #0366d6;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .nav-card p {
+            color: #6a737d;
+            margin: 0;
+        }
+        .info-section {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f1f8ff;
+            border-left: 4px solid #0366d6;
+            border-radius: 0 6px 6px 0;
+        }
+        .info-section h3 {
+            color: #0366d6;
+            margin-top: 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+            color: #6a737d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Sample Docs</h1>
+            <p class="subtitle">A GitHub Pages Documentation Site</p>
+        </div>
+
+        <div class="sample-notice">
+            ⚠️ THIS IS A SAMPLE DOCUMENTATION SITE - FOR DEMONSTRATION PURPOSES ONLY ⚠️
+        </div>
+
+        <div class="nav-section">
+            <h2>📋 Legal Documents</h2>
+            <div class="nav-links">
+                <a href="privacy.html" class="nav-card">
+                    <h3>🔒 Privacy Policy</h3>
+                    <p>Sample privacy policy template with standard sections for data collection, usage, and user rights.</p>
+                </a>
+                <a href="terms.html" class="nav-card">
+                    <h3>📜 Terms of Service</h3>
+                    <p>Sample terms of service template covering user agreements, prohibited uses, and legal disclaimers.</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h3>ℹ️ About This Site</h3>
+            <p>This is a sample GitHub Pages documentation site created to demonstrate how to structure a simple docs repository. The legal documents included are templates only and should not be used in production without proper legal review.</p>
+            
+            <h3>🚀 Getting Started with GitHub Pages</h3>
+            <p>To use this as a template for your own GitHub Pages site:</p>
+            <ol>
+                <li>Fork or clone this repository</li>
+                <li>Enable GitHub Pages in your repository settings</li>
+                <li>Customize the content to match your needs</li>
+                <li>Replace sample legal documents with properly reviewed versions</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p>Built with ❤️ for GitHub Pages | Last updated: <span id="current-date"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Add current date to footer
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
